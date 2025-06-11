@@ -8,7 +8,7 @@ trigger:
 # Can be deleted if self-hosted agents are not being used
 # See https://learn.microsoft.com/en-us/azure/devops/pipelines/agents/agents
 pool:
-  name: Default
+  name: rhtap-testing
 
 container:
   image: quay.io/redhat-appstudio/rhtap-task-runner:latest
