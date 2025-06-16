@@ -11,8 +11,11 @@ pool:
   name: rhtap-testing
 
 container:
-  image: quay.io/redhat-appstudio/rhtap-task-runner:latest
-  options: --privileged
+  # image: quay.io/redhat-appstudio/rhtap-task-runner:latest
+  image: quay.io/lucarval/tssc-dev-multi-ci:1.6-sbom
+  options: >-
+    --privileged
+    --add-host=rekor-server-tssc-tas.apps-crc.testing:127.0.0.1
 
 # Using 'rhtap' variable group by default
 # Change accordingly when using a different variable group
