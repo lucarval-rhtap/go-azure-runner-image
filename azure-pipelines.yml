@@ -19,7 +19,7 @@ container:
 # Can be deleted if the variables are set differently
 # See https://learn.microsoft.com/en-us/azure/devops/pipelines/process/variables
 variables:
-  - group: rhopp-variables
+  - group: lucarval
   - name: CI_TYPE
     value: azure
 
